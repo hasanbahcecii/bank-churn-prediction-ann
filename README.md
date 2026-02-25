@@ -1,75 +1,97 @@
-# 🧠 Neural Network Projects: CNN & ANN in TensorFlow
+# 🧠 Neural Network Projects: ANN in TensorFlow
 
-This repository contains **two deep learning projects** implemented with TensorFlow/Keras:
+This repository contains deep learning projects implemented using **TensorFlow/Keras**.
 
-1. 🐶 **Convolutional Neural Network (CNN)** - Image classification of cats vs dogs
-2. 🏦 **Artificial Neural Network (ANN)** - Customer churn prediction for a bank
+🏦 **Artificial Neural Network (ANN)** – Customer churn prediction for a bank.
 
 Each project includes complete data preprocessing, model building, training, and evaluation steps.
 
 ---
 
-## 📁 Contents
+## 🏦 ANN – Bank Customer Churn Prediction
 
-- [`cnn_cat_dog_classifier`](#-cnn-cat-vs-dog-image-classifier)
-- [`ann_bank_churn_prediction`](#-ann-bank-customer-churn-prediction)
-- [Dependencies](#-dependencies)
-- [License](#-license)
+This project uses an **Artificial Neural Network (ANN)** to predict whether a customer will leave the bank based on their personal and financial information.
 
----
+It is a **binary classification problem** where the output indicates:
 
-## 🐶 CNN: Cat vs Dog Image Classifier
-
-A **Convolutional Neural Network** is used to classify whether an image contains a **cat or a dog**.
+- 1 → Customer leaves the bank  
+- 0 → Customer stays  
 
 ---
 
-### 📂 Dataset
+## 📂 Dataset
 
-Download the dataset from the link below:
+The dataset `Churn_Modelling.csv` is included in the repository.
 
-📦 [Download dataset.zip](https://www.dropbox.com/scl/fi/ppd8g3d6yoy5gbn960fso/dataset.zip?rlkey=lqbqx7z6i9hp61l6g731wgp4v&e=1&st=gdn6pydw&dl=0)
+It contains customer information such as:
 
-Unzip the file and ensure the following structure:
+- Credit score  
+- Geography  
+- Gender  
+- Age  
+- Tenure  
+- Balance  
+- Number of products  
+- Credit card status  
+- Active membership  
+- Estimated salary  
 
 ---
-### 🚀 CNN Workflow
 
-1. **Preprocessing** the training and test image sets
-2. **Building** a CNN with:
-   - 2 convolution + pooling layers
-   - 1 fully connected layer
-3. **Training** on 25 epochs
-4. **Predicting** a single image
-   
+## ⚙️ Workflow
+
+### 1️⃣ Data Preprocessing
+
+- Label Encoding → Gender  
+- One-Hot Encoding → Geography  
+- Train/Test split (80/20)  
+- Feature Scaling using **StandardScaler**
+
+### 2️⃣ Building the ANN
+
+The model is implemented using the **Keras Sequential API**:
+
+- Dense (6 units, ReLU)
+- Dense (6 units, ReLU)
+- Dense (1 unit, Sigmoid)
+
+### 3️⃣ Training
+
+- Optimizer: **Adam**
+- Loss function: **Binary Crossentropy**
+- Batch size: **32**
+- Epochs: **100**
+
+### 4️⃣ Evaluation
+
+- Test set predictions  
+- Confusion matrix  
+- Accuracy score  
+
+### 5️⃣ Single Customer Prediction
+
+The trained model can predict whether a specific customer will churn.
+
 ---
 
-## 🏦 ANN: Bank Customer Churn Prediction
-This Artificial Neural Network predicts whether a customer will leave a bank (churn) based on their personal and account details.
+## 📊 Example Output
 
-### 📂 Dataset
-The dataset Churn_Modelling.csv is already in the repository.
+The model predicts whether the customer will:
 
-### 🚀 ANN Workflow
-1. Data Preprocessing
+**Stay in the bank** or **Leave the bank**
 
-2. Label encoding (Gender)
+based on the input features.
 
-3. One-hot encoding (Geography)
+---
 
-4. Feature scaling
+## 🙏 Acknowledgements
 
-5. Building a 3-layer ANN
+- ANN dataset: **Churn Modelling dataset** (commonly used in ML courses)  
+- Built for educational and portfolio purposes  
 
-6. Training on 100 epochs
+---
 
-7. Predicting a single user and evaluating test predictions
+## 📜 License
 
-## 🙋‍♂️ Acknowledgments
-Dataset for CNN provided via Dropbox link
-
-ANN dataset from Churn Modelling challenge (common in ML courses)
-
-Projects built with educational and demonstration purposes in mind
-## License
-This project is licensed under the [MIT License](https://opensource.org/license/MIT).
+This project is licensed under the MIT License:  
+https://opensource.org/license/mit
