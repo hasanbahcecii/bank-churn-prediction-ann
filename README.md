@@ -1,10 +1,10 @@
-# 🧠 Neural Network Projects: ANN in TensorFlow
+# 🧠 Neural Network Project: ANN in TensorFlow
 
-This repository contains deep learning projects implemented using **TensorFlow/Keras**.
+This repository contains deep learning project implemented using **TensorFlow/Keras**.
 
-🏦 **Artificial Neural Network (ANN)** – Customer churn prediction for a bank.
-
-Each project includes complete data preprocessing, model building, training, and evaluation steps.
+## 📌 Project Overview
+🏦 Artificial Neural Network (ANN) – Customer churn prediction for a bank.
+The project covers data preprocessing, model building, training, and evaluation end-to-end.
 
 ---
 
@@ -81,6 +81,15 @@ The model predicts whether the customer will:
 **Stay in the bank** or **Leave the bank**
 
 based on the input features.
+
+---
+
+## ⚙️ Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- NumPy  
+- Matplotlib  
 
 ---
 
