@@ -83,9 +83,10 @@ based on the input features.
 ## ⚙️ Technologies Used
 
 - Python  
-- TensorFlow / Keras  
+- TensorFlow 
 - NumPy  
-- Matplotlib  
+- Scikit-learn
+  
 
 ---
 
