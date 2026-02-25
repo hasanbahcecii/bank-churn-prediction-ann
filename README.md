@@ -2,10 +2,6 @@
 
 This repository contains deep learning project implemented using **TensorFlow/Keras**.
 
-## 📌 Project Overview
-🏦 Artificial Neural Network (ANN) – Customer churn prediction for a bank.
-The project covers data preprocessing, model building, training, and evaluation end-to-end.
-
 ---
 
 ## 🏦 ANN – Bank Customer Churn Prediction
@@ -102,5 +98,4 @@ based on the input features.
 
 ## 📜 License
 
-This project is licensed under the MIT License:  
-https://opensource.org/license/mit
+This project is licensed under the MIT License:  [MIT License](https://opensource.org/license/MIT).
